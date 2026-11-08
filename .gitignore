@@ -1,0 +1,5 @@
+release/*.exe
+release/*.zip
+node_modules/
+.DS_Store
+Thumbs.db
