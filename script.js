@@ -1,7 +1,7 @@
 (function () {
   const GITHUB_REPO = '__GITHUB_REPO__';
-  const RELEASE_ASSET = 'Phantom-Studio.exe';
-  const LOCAL_ASSET = 'release/Phantom-Studio.exe';
+  const RELEASE_ASSET = 'Phantom-Studio.zip';
+  const LOCAL_ASSET = 'release/Phantom-Studio.zip';
 
   function detectRepo() {
     const host = location.hostname;
@@ -37,11 +37,11 @@
 
   const notes = {
     windows:
-      'Téléchargement direct. Si Windows SmartScreen apparaît : Informations complémentaires → Exécuter quand même.',
+      'Téléchargement direct. Windows peut afficher « virus » ou SmartScreen : c'est un faux positif (application non signée). Clique sur Informations complémentaires → Exécuter quand même.',
     android:
-      'Le fichier se télécharge sur ton téléphone. Phantom Studio est une application Windows : ouvre ensuite le .exe sur un PC Windows 10/11.',
+      'Le fichier se télécharge sur ton téléphone. Phantom Studio est une application Windows : décompresse-le sur un PC Windows 10/11, puis lance Phantom Studio.exe.',
     ios:
-      'Le fichier se télécharge sur ton iPhone. Phantom Studio est une application Windows : ouvre ensuite le .exe sur un PC Windows 10/11.',
+      'Le fichier se télécharge sur ton iPhone. Phantom Studio est une application Windows : décompresse-le sur un PC Windows 10/11, puis lance Phantom Studio.exe.',
     mac:
       'Le fichier se télécharge. Phantom Studio tourne pour l’instant uniquement sous Windows 10/11.',
     linux:

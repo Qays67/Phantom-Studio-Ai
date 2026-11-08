@@ -26,7 +26,11 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
+}
+
+section[id] {
+  scroll-margin-top: 84px;
 }
 
 body {
